@@ -1,6 +1,9 @@
 import turtle as turtle_module
 import random
 
+rows = 10
+columns = 10
+
 turtle_module.colormode(255)
 tim = turtle_module.Turtle()
 tim.speed("fastest")
@@ -40,8 +43,8 @@ def move(direction):
 
 
 go_home()
-for y in range(10):
-    for x in range(10):
+for y in range(rows):
+    for x in range(columns):
         draw_dot()
         if y % 2 == 0:
             move("right")
